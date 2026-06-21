@@ -1,25 +1,25 @@
 class FileFinder < Formula
-  desc "A command line tool to find files in a directory tree based on various criteria."
+  desc "CLI to find files in a directory tree based on various criteria"
   homepage "https://github.com/issy/file-finder"
-  version "0.1.0"
+  version "0.1.1"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/issy/file-finder/releases/download/0.1.0/file-finder-aarch64-apple-darwin.tar.xz"
-      sha256 "fe5d7095aff94e26d073182341b02544f944025a5420dcbd8b969c782f0a4aa7"
+      url "https://github.com/issy/file-finder/releases/download/0.1.1/file-finder-aarch64-apple-darwin.tar.xz"
+      sha256 "e0df4cead9b69950c5a566a5538dbfe89b87f103b8a2dc7ce51aa979f8d3b09f"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/issy/file-finder/releases/download/0.1.0/file-finder-x86_64-apple-darwin.tar.xz"
-      sha256 "228960c41f366a6235f51be1544d356c9767cf15fdede3af8ddc189d2d3c39e2"
+      url "https://github.com/issy/file-finder/releases/download/0.1.1/file-finder-x86_64-apple-darwin.tar.xz"
+      sha256 "3abc2ec39db5276610de3cea2b16ba62e4ed23acba46b06971e4080243b30d0a"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/issy/file-finder/releases/download/0.1.0/file-finder-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "56d8413a81d8a17d449b93425bd88aa2233f68fca3dfb44f73def9da57686124"
+      url "https://github.com/issy/file-finder/releases/download/0.1.1/file-finder-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "9c6b1c9a70713883239ddaf4188c7d7aec139791301c48b552a8cf86933880f6"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/issy/file-finder/releases/download/0.1.0/file-finder-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "28d0865f7a7946ca21128bd1771d160dc2e44977e14aed742aeedd38c257a721"
+      url "https://github.com/issy/file-finder/releases/download/0.1.1/file-finder-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "a93f3ff1fe4e9d5f0e0f27e76d38f5345d7d51b5b5f924f8fa327031f5c02d72"
     end
   end
 
