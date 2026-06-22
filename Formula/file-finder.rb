@@ -1,25 +1,25 @@
 class FileFinder < Formula
   desc "CLI to find files in a directory tree based on various criteria"
   homepage "https://github.com/issy/file-finder"
-  version "0.1.1"
+  version "0.2.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/issy/file-finder/releases/download/0.1.1/file-finder-aarch64-apple-darwin.tar.xz"
-      sha256 "e0df4cead9b69950c5a566a5538dbfe89b87f103b8a2dc7ce51aa979f8d3b09f"
+      url "https://github.com/issy/file-finder/releases/download/0.2.0/file-finder-aarch64-apple-darwin.tar.xz"
+      sha256 "1dd00b473b39c8236634d81d50b34cc19b7b2845930a3407377f3301771bd479"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/issy/file-finder/releases/download/0.1.1/file-finder-x86_64-apple-darwin.tar.xz"
-      sha256 "3abc2ec39db5276610de3cea2b16ba62e4ed23acba46b06971e4080243b30d0a"
+      url "https://github.com/issy/file-finder/releases/download/0.2.0/file-finder-x86_64-apple-darwin.tar.xz"
+      sha256 "4f708f53eac4db6da54926ada59af449a0045c57e188acee50b4be4c1d032170"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/issy/file-finder/releases/download/0.1.1/file-finder-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "9c6b1c9a70713883239ddaf4188c7d7aec139791301c48b552a8cf86933880f6"
+      url "https://github.com/issy/file-finder/releases/download/0.2.0/file-finder-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "81137113ce9a3e1bd358096e7922fc22b0485d43359a15c72a94674fce8bb6d4"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/issy/file-finder/releases/download/0.1.1/file-finder-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "a93f3ff1fe4e9d5f0e0f27e76d38f5345d7d51b5b5f924f8fa327031f5c02d72"
+      url "https://github.com/issy/file-finder/releases/download/0.2.0/file-finder-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "e496d446de403c817bfb72402a45000b69cadb9f862a71e6d66ad841b4ed341e"
     end
   end
 
